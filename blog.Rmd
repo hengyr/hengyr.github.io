@@ -1,0 +1,38 @@
+---
+title: "DShw2"
+author: "Yanru Heng"
+
+output: 
+    html_document:
+      toc: TRUE
+      toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##Intro
+
+Here I am using dataset of nycflight13 to show to how to use ggplots to achieve data visualization. 
+
+```{r}
+library(nycflights13)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+head(flights)
+```
+
+##Here we could see the cancellation across the months easily thanks to ggplot2. 
+```{r}
+flights %>% mutate(cancelled= is.na(dep_time)) %>%
+  group_by(month) %>%
+  summarise(p= sum(cancelled)/n()) %>%
+  ggplot(flights, mapping=aes(x=month, y=p))+
+  geom_line(size=1) +
+  xlab("month")+
+  ylab("proportion of cancellation")+
+  ggtitle("Cacellation and seasons")+
+  theme(axis.title=element_text(size=10))
+```
+

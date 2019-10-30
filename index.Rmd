@@ -1,7 +1,22 @@
 ---
-title: "Holy cow!"
+title: "Yanru Heng"
 ---
 
-### I have a webpage!
+Hey, 
 
-And I can put all kinds of stuff on it!
+I'm Yanru Heng.
+
+Master candidates at Weill Cornell Medical for Biostatistics and Data Science. Here's my website. 
+
+St. Olaf College Alumni, Math Major with Statistics Concentration.
+
+Enjoy my personal website.
+
+This is a short version. More to come! 
+
+Enjoy!
+
+
+
+<img src = "/Users/yanru/Documents/DataSci/Assignments/hengyr.github.io/hyr.jpeg" style="width: 30%;
+border: 10px solid; margin-right: 20px" align = "left">
